@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="BGo" layoutX="368.0" layoutY="700.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="147.0" text="Go">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <TableView id="#000080" fx:id="table" editable="true" layoutX="10.0" layoutY="10.0" prefHeight="570.0" prefWidth="860.0" style="-fx-border-color: #DC143C; -fx-background-size: 25;">
+        <columns>
+          <TableColumn fx:id="idOperators" prefWidth="45.0" sortable="false" text="j" />
+          <TableColumn fx:id="Operator" prefWidth="250.0" text="Оператор" />
+            <TableColumn fx:id="kolvoOperators" minWidth="0.0" prefWidth="45.0" text="f1j" />
+            <TableColumn fx:id="idOperators1" prefWidth="180.0" sortable="false" />
+            <TableColumn fx:id="idOperands" minWidth="0.0" prefWidth="45.0" text="i" />
+            <TableColumn fx:id="Operand" prefWidth="250.0" text="Операнд" />
+            <TableColumn fx:id="kolvoOperands" prefWidth="45.0" text="f2j" />
+        </columns>
+      </TableView>
+      <Label fx:id="LabelJ" layoutX="14.0" layoutY="590.0" text="j_общ = ..." textFill="STEELBLUE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelI" layoutX="520.0" layoutY="590.0" text="i_общ = ..." textFill="STEELBLUE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelN1" layoutX="280.0" layoutY="590.0" text="N1 = ..." textFill="STEELBLUE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelN2" layoutX="770.0" layoutY="590.0" text="N2 = ..." textFill="STEELBLUE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="Dictionary" layoutX="10.0" layoutY="646.0" text="Словарь программы = ..." textFill="CRIMSON">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="Volume" layoutX="10.0" layoutY="725.0" text="Обьём программы = ..." textFill="CRIMSON">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="Length" layoutX="10.0" layoutY="685.0" text="Длина программы = ..." textFill="CRIMSON">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelInclude" layoutX="525.0" layoutY="725.0" text="Макс. вложенность = ..." textFill="CRIMSON">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="LabelComplixetyAbs" layoutX="525.0" layoutY="646.0" text="Абс. сложность= ..." textFill="CRIMSON">
+         <font>
+            <Font size="27.0" />
+         </font>
+
+      </Label>
+      <Label fx:id="LabelComplixetyOtn" layoutX="525.0" layoutY="685.0" text="Отн. сложность = ..." textFill="CRIMSON">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
